@@ -101,7 +101,7 @@ public class AccountController {
     }
     @GetMapping("/signin")
     public ResponseEntity<String> getSignin(){ // map a URL to a method
-        String s="<form hx-post=\"/signup\" hx-target=\"this\" hx-swap=\"outerHTML\">\n" +
+        String s="<form hx-post=\"/auth/login\" hx-target=\"this\" hx-swap=\"outerHTML\">\n" +
                 "    <div>\n" +
                 "        <label>First Name</label>\n" +
                 "        <input type=\"text\" name=\"firstname\" value=\"Joe\">\n" +
