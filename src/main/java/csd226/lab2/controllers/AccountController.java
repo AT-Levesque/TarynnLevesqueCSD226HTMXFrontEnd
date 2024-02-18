@@ -131,29 +131,29 @@ public class AccountController {
     }
     @GetMapping("/signin")
     public ResponseEntity<String> getSignin(){ // map a URL to a method
-        String s="<form hx-post=\"/auth/login\" hx-target=\"this\" hx-swap=\"outerHTML\">\n" +
-                "    <div>\n" +
-                "        <label>First Name</label>\n" +
-                "        <input type=\"text\" name=\"firstname\" value=\"Fred\">\n" +
-                "    </div>\n" +
-                "    <div class=\"form-group\">\n" +
-                "        <label>Last Name</label>\n" +
-                "        <input type=\"text\" name=\"lastname\" value=\"Carella\">\n" +
-                "    </div>\n" +
-                "    <div class=\"form-group\">\n" +
-                "        <label>Email Address</label>\n" +
-                "        <input type=\"email\" name=\"email\" value=\"fred.carella@gmail.com\">\n" +
-                "    </div>\n" +
-                "    <div class=\"form-group\">\n" +
-                "        <label>Password</label>\n" +
-                "        <input type=\"password\" name=\"password\" value=\"fredspassword\">\n" +
-                "    </div>\n" +
-                "    <div class=\"form-group\">\n" +
-                "        <label>Confirm Password</label>\n" +
-                "        <input type=\"password\" name=\"confirmPassword\" value=\"fredspassword\">\n" +
-                "    </div>\n" +
-                "    <button class=\"btn\">Submit</button>\n" +
-                "    <button class=\"btn\" hx-get=\"/signin\">Cancel</button>\n" +
+        String s="<form hx-post=\"/auth/login\" hx-target=\"this\" hx-swap=\"outerHTML\">" +
+                "    <div>" +
+                "        <label>First Name</label>" +
+                "        <input type=\"text\" name=\"firstname\" value=\"Fred\">" +
+                "    </div>" +
+                "    <div class=\"form-group\">" +
+                "        <label>Last Name</label>" +
+                "        <input type=\"text\" name=\"lastname\" value=\"Carella\">" +
+                "    </div>" +
+                "    <div class=\"form-group\">" +
+                "        <label>Email Address</label>" +
+                "        <input type=\"email\" name=\"email\" value=\"fred.carella@gmail.com\">" +
+                "    </div>" +
+                "    <div class=\"form-group\">" +
+                "        <label>Password</label>" +
+                "        <input type=\"password\" name=\"password\" value=\"fredspassword\">" +
+                "    </div>" +
+                "    <div class=\"form-group\">" +
+                "        <label>Confirm Password</label>" +
+                "        <input type=\"password\" name=\"confirmPassword\" value=\"fredspassword\">" +
+                "    </div>" +
+                "    <button class=\"btn\">Submit</button>" +
+                "    <button class=\"btn\" hx-get=\"/signin\">Cancel</button>" +
                 "</form>";
         return ResponseEntity.ok(s);
     }
